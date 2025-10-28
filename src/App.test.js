@@ -6,7 +6,7 @@ describe("My dream team landing", () => {
   test("renders header title", () => {
     render(<App />);
     expect(
-      screen.getByRole("heading", { level: 1, name: /My dream team V2/i })
+      screen.getByRole("heading", { level: 1, name: /My dream team V4/i })
     ).toBeInTheDocument();
   });
 
