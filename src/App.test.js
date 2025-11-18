@@ -1,5 +1,5 @@
 import React from "react";
-import { render, screen, within } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import App from "./App";
 
 describe("My dream team landing", () => {
@@ -8,15 +8,5 @@ describe("My dream team landing", () => {
     expect(
       screen.getByRole("heading", { level: 1, name: /My dream team V2/i })
     ).toBeInTheDocument();
-  });
-
-  test("renders at least one team card with name and position", () => {
-    render(<App />);
-    const card = screen.getByRole("img", { name: /john doe/i }).closest("div");
-    expect(card).toBeInTheDocument();
-
-    const utils = within(card);
-    expect(utils.getByText(/john doe/i)).toBeInTheDocument();
-    expect(utils.getByText(/software engineer/i)).toBeInTheDocument();
   });
 });

@@ -2,8 +2,8 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header style={styles.header}>
-      <h1>My dream team V3</h1>
+    <header style={styles.header2}>
+      <h1>My dream team</h1>
     </header>
   );
 };
